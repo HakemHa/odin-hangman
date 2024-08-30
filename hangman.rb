@@ -412,11 +412,13 @@ class Hangman
     print("---------- Saved Games ----------", "\n")
     saves.each.with_index do |s, i|
       if i == selected
+        print("\e[32;40m")
         print("> ")
       else
         print("  ")
       end
       print("#{names[i]}: ", self.process(s), " Attempts left: ", s[:left], "\n")
+      print("\e[m")
     end
     print("---------------------------------\n")
   end
@@ -439,7 +441,7 @@ class Hangman
   
   
 =========  #{progress} Attempts left: #{left}
-           Guess: #{input}   (Press . to save your progress)
+           Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
 Guessed: #{guessed}
 -----------------------------------------------------
 "
@@ -456,7 +458,7 @@ Guessed: #{guessed}
 
   |
 =========  #{progress} Attempts left: #{left}
-           Guess: #{input}   (Press . to save your progress)
+           Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
 Guessed: #{guessed}
 -----------------------------------------------------
 "
@@ -473,7 +475,7 @@ Guessed: #{guessed}
   |  
   |
 =========  #{progress} Attempts left: #{left}
-           Guess: #{input}   (Press . to save your progress)
+           Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
 Guessed: #{guessed}
 -----------------------------------------------------
 "
@@ -490,7 +492,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -507,7 +509,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -524,7 +526,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -541,7 +543,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -558,7 +560,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -575,7 +577,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -592,7 +594,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -609,7 +611,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -626,7 +628,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -643,7 +645,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -660,7 +662,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -677,7 +679,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -694,7 +696,7 @@ Guessed: #{guessed}
       |  
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -711,7 +713,7 @@ Guessed: #{guessed}
       |  / 
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------
 "
@@ -728,7 +730,7 @@ Guessed: #{guessed}
       |  / \\
       |
     =========  #{progress} Attempts left: #{left}
-               Guess: #{input}   (Press . to save your progress)
+               Guess: \e[1;97m#{input}\e[0m   (Press . to save your progress)
     Guessed: #{guessed}
     -----------------------------------------------------"
       print(scene, "\n") 
@@ -745,7 +747,7 @@ Guessed: #{guessed}
       "
 -----------------Welcome to hangman!------------------
                                                  +---+
-> Start new game                                 |   |
+\e[32;40m> Start new game\e[0m                                 |   |
   Load saved game                                o   |
   Settings                                      /|\\  |
   Exit                                          / \\  |
@@ -758,7 +760,7 @@ Guessed: #{guessed}
 -----------------Welcome to hangman!------------------
                                                  +---+
   Start new game                                 |   |
-> Load saved game                                o   |
+\e[32;40m> Load saved game\e[0m                                o   |
   Settings                                      /|\\  |
   Exit                                          / \\  |
                                                      |
@@ -771,7 +773,7 @@ Guessed: #{guessed}
                                                  +---+
   Start new game                                 |   |
   Load saved game                                o   |
-> Settings                                      /|\\  |
+\e[32;40m> Settings\e[0m                                      /|\\  |
   Exit                                          / \\  |
                                                      |
 (Press Enter or Spacebar to select an option)  =========
@@ -784,7 +786,7 @@ Guessed: #{guessed}
   Start new game                                 |   |
   Load saved game                                o   |
   Settings                                      /|\\  |
-> Exit                                          / \\  |
+\e[32;40m> Exit\e[0m                                          / \\  |
                                                      |
 (Press Enter or Spacebar to select an option)  =========
             "
@@ -859,7 +861,7 @@ Pick a name for this save:
       "
 --------------Settings--------------
 
-> Minimum word length: #{min_length}
+\e[32;40m> Minimum word length: #{min_length}\e[0m
   Maximum word length: #{max_length}
   Number of attempts: #{n_attempts}
   Mode: #{mode.capitalize}
@@ -872,7 +874,7 @@ Pick a name for this save:
 --------------Settings--------------
 
   Minimum word length: #{min_length}
-> Maximum word length: #{max_length}
+\e[32;40m> Maximum word length: #{max_length}\e[0m
   Number of attempts: #{n_attempts}
   Mode: #{mode.capitalize}
   Exit Settings
@@ -885,7 +887,7 @@ Pick a name for this save:
 
   Minimum word length: #{min_length}
   Maximum word length: #{max_length}
-> Number of attempts: #{n_attempts}
+\e[32;40m> Number of attempts: #{n_attempts}\e[0m
   Mode: #{mode.capitalize}
   Exit Settings
 ------------------------------------
@@ -898,7 +900,7 @@ Pick a name for this save:
   Minimum word length: #{min_length}
   Maximum word length: #{max_length}
   Number of attempts: #{n_attempts}
-> Mode: #{mode.capitalize}
+\e[32;40m> Mode: #{mode.capitalize}\e[0m
   Exit Settings
 ------------------------------------
       "
@@ -911,15 +913,16 @@ Pick a name for this save:
   Maximum word length: #{max_length}
   Number of attempts: #{n_attempts}
   Mode: #{mode.capitalize}
-> Exit Settings
+\e[32;40m> Exit Settings\e[0m
 ------------------------------------
       "
     when /settings_options_selected0/
       min_length, max_length, n_attempts, mode = @settings[:min_length], @settings[:max_length], @settings[:n_attempts], @settings[:mode]
+      color = (min_length || 0) <= max_length ? "\e[1;92m" : "\e[1;91m"
       "
 --------------Settings--------------
 
-> Minimum word length:  #{min_length}
+> Minimum word length:  #{color}#{min_length}\e[0m
   Maximum word length: #{max_length}
   Number of attempts: #{n_attempts}
   Mode: #{mode.capitalize}
@@ -928,11 +931,12 @@ Pick a name for this save:
       "
     when /settings_options_selected1/
       min_length, max_length, n_attempts, mode = @settings[:min_length], @settings[:max_length], @settings[:n_attempts], @settings[:mode]
+      color = (max_length || 0) <= @@max_length ? "\e[1;92m" : "\e[1;91m"
       "
 --------------Settings--------------
 
   Minimum word length: #{min_length}
-> Maximum word length:  #{max_length}
+> Maximum word length:  #{color}#{max_length}\e[0m
   Number of attempts: #{n_attempts}
   Mode: #{mode.capitalize}
   Exit Settings
@@ -941,12 +945,13 @@ Pick a name for this save:
 
     when /settings_options_selected2/
       min_length, max_length, n_attempts, mode = @settings[:min_length], @settings[:max_length], @settings[:n_attempts], @settings[:mode]
+      color = (n_attempts || 0) <= ("z".ord-"a".ord+1) ? "\e[1;92m" : "\e[1;91m"
       "
 --------------Settings--------------
 
   Minimum word length: #{min_length}
   Maximum word length: #{max_length}
-> Number of attempts:  #{n_attempts}
+> Number of attempts:  #{color}#{n_attempts}\e[0m
   Mode: #{mode.capitalize}
   Exit Settings
 ------------------------------------
